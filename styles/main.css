@@ -8,6 +8,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Agrandir";
+    src: url("../fuentes/Agrandir.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -226,6 +233,108 @@ body {
         transform: translateX(-50%);
     }
 
+}
+
+.bio-section {
+    position: relative;
+    width: 100%;
+    min-height: 720px;
+
+    background-image: url("../imagenes/Fondo Perros.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.bio-colombia {
+    position: absolute;
+
+    width: 390px;
+    height: auto;
+
+    left: 7%;
+    top: 8%;
+
+    z-index: 1;
+}
+
+.bio-title {
+    position: absolute;
+
+    left: 29%;
+    top: 7%;
+
+    margin: 0;
+
+    font-family: "CyGroteskGrand", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+
+    color: #3a0a7f;
+
+    z-index: 3;
+}
+
+.bio-jennifer {
+    position: absolute;
+
+    width: 590px;
+    height: auto;
+
+    left: 2%;
+    bottom: 0;
+
+    z-index: 4;
+}
+
+.bio-content {
+    position: absolute;
+
+    width: 42%;
+    max-width: 560px;
+
+    right: 7%;
+    top: 7%;
+
+    font-family: "Agrandir", sans-serif;
+    color: #3a0a7f;
+
+    z-index: 5;
+}
+
+.bio-item {
+    margin: 0;
+}
+
+.bio-item p {
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 1.05;
+}
+
+.bio-item strong {
+    font-weight: 900;
+}
+
+/* Líneas punteadas */
+
+.bio-divider {
+    width: 100%;
+    height: 3px;
+
+    margin: 17px 0;
+
+    background-image: repeating-linear-gradient(
+        to right,
+        #3a0a7f 0,
+        #3a0a7f 28px,
+        transparent 28px,
+        transparent 52px
+    );
 }
 
 
