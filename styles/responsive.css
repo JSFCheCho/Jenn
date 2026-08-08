@@ -1,0 +1,57 @@
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .site-header {
+        height: 90px;
+        padding: 0 35px;
+    }
+
+    .main-nav {
+        gap: 28px;
+    }
+
+    .main-nav a {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .site-header {
+        height: auto;
+        min-height: 80px;
+
+        padding: 25px 20px;
+
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 15px 25px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 100svh;
+
+        background-position: center top;
+    }
+
+}
