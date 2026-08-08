@@ -15,6 +15,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "CyGroteskBold";
+    src: url("../fuentes/cy-grotesk-grand-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -63,7 +69,7 @@ body {
     color: #ffffff;
     text-decoration: none;
 
-    font-family: "Cy Grotesk Grand", sans-serif;
+    font-family: "CyGroteskBold", sans-serif;
     font-size: 18px;
     font-weight: bold;
 
@@ -268,9 +274,9 @@ body {
 
     margin: 0;
 
-    font-family: "CyGroteskGrand", sans-serif;
+    font-family: "CyGroteskBold", sans-serif;
     font-size: 100px;
-    font-weight: 900;
+    font-weight: bold;
     line-height: 1;
 
     color: #3a0a7f;
