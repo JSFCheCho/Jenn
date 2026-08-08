@@ -166,6 +166,68 @@ body {
     display: block;
 }
 
+.name-marquee {
+    width: 100%;
+    height: 70px;
+
+    background-color: #f44773;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.name-marquee-track {
+    display: flex;
+
+    width: max-content;
+
+    animation: marquee 18s linear infinite;
+}
+
+.name-marquee-content {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.name-marquee-content span {
+    font-family: "Cy Grotesk Grand", sans-serif;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    line-height: 1;
+}
+
+.name-marquee-content .marquee-dot {
+    margin: 0 28px;
+
+    font-size: 28px;
+}
+
+/* Movimiento infinito */
+
+@keyframes marquee {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
 
 /* =========================
    SECCIONES
