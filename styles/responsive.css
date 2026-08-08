@@ -117,14 +117,14 @@
     .hero-logo-jennifer {
         position: absolute;
 
-        width: 80%;
+        width: 72%;
 
         max-width: 430px;
 
         height: auto;
 
         left: 50%;
-        top: 8%;
+        top: 11%;
 
         transform: translateX(-50%);
 
@@ -139,8 +139,8 @@
     .hero-circle {
         position: absolute;
 
-        width: 92%;
-        height: 92%;
+        width: 90vw;
+        height: 90vw;
 
         min-width: 400px;
         min-height: 400px;
@@ -194,7 +194,7 @@
         height: auto;
 
         left: 50%;
-        top: 55%;
+        top: 65%;
 
         transform: translateX(-50%);
 
