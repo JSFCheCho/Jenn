@@ -1,57 +1,203 @@
-/* =========================================================
-   TABLET
-   ========================================================= */
+/* =====================================================
+   RESPONSIVE - TABLET
+   ===================================================== */
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1100px) {
 
     .site-header {
         height: 90px;
-        padding: 0 35px;
+        padding: 0 30px;
     }
 
     .main-nav {
-        gap: 28px;
+        gap: 25px;
     }
 
     .main-nav a {
         font-size: 16px;
     }
 
+    .hero-logo-jennifer {
+        width: 360px;
+        left: 5%;
+        top: 20%;
+    }
+
+    .hero-logo-primero {
+        width: 130px;
+        left: 18%;
+        top: 58%;
+    }
+
+    .hero-circle {
+        width: 400px;
+        height: 400px;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .hero-photo {
+        width: 430px;
+        right: 2%;
+        bottom: 0;
+    }
 }
 
 
-/* =========================================================
-   MÓVIL
-   ========================================================= */
+/* =====================================================
+   RESPONSIVE - MÓVIL
+   ===================================================== */
 
 @media (max-width: 767px) {
 
+    /* ---------------------------------------------
+       HEADER
+       --------------------------------------------- */
+
     .site-header {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
         height: auto;
-        min-height: 80px;
 
-        padding: 25px 20px;
+        padding: 25px 20px 0;
 
+        display: flex;
+        justify-content: center;
         align-items: flex-start;
+
+        z-index: 100;
     }
 
     .main-nav {
         width: 100%;
 
         display: flex;
+        justify-content: center;
+        align-items: center;
+
         flex-wrap: wrap;
 
-        gap: 15px 25px;
+        column-gap: 25px;
+        row-gap: 15px;
     }
 
     .main-nav a {
-        font-size: 14px;
+        font-size: 17px;
+        line-height: 1.2;
+
+        white-space: nowrap;
     }
 
-    .hero {
-        min-height: 100svh;
 
+    /* ---------------------------------------------
+       HERO
+       --------------------------------------------- */
+
+    .hero {
+        position: relative;
+
+        width: 100%;
+        min-height: 900px;
+
+        overflow: hidden;
+
+        background-size: cover;
         background-position: center top;
     }
 
+
+    /* ---------------------------------------------
+       LOGO JENNIFER
+       --------------------------------------------- */
+
+    .hero-logo-jennifer {
+        position: absolute;
+
+        width: 82%;
+
+        max-width: 430px;
+
+        height: auto;
+
+        left: 50%;
+        top: 245px;
+
+        transform: translateX(-50%);
+
+        z-index: 4;
+    }
+
+
+    /* ---------------------------------------------
+       CÍRCULO
+       --------------------------------------------- */
+
+    .hero-circle {
+        position: absolute;
+
+        width: 105vw;
+        height: 105vw;
+
+        min-width: 400px;
+        min-height: 400px;
+
+        max-width: 550px;
+        max-height: 550px;
+
+        left: 50%;
+        bottom: 90px;
+
+        transform: translateX(-50%);
+
+        background-color: #fc310d;
+
+        z-index: 1;
+    }
+
+
+    /* ---------------------------------------------
+       FOTO JENNIFER
+       --------------------------------------------- */
+
+    .hero-photo {
+        position: absolute;
+
+        width: 92%;
+
+        max-width: 560px;
+
+        height: auto;
+
+        left: 50%;
+        right: auto;
+        bottom: 0;
+
+        transform: translateX(-50%);
+
+        z-index: 2;
+    }
+
+
+    /* ---------------------------------------------
+       LOGO PRIMERO LA GENTE
+       --------------------------------------------- */
+
+    .hero-logo-primero {
+        position: absolute;
+
+        width: 145px;
+
+        height: auto;
+
+        left: 50%;
+        top: 530px;
+
+        transform: translateX(-50%);
+
+        z-index: 5;
+    }
 }
