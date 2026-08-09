@@ -306,3 +306,50 @@
         line-height: 1.1;
     }
 }
+
+@media (max-width: 768px) {
+ 
+    .milibro-section {
+        min-height: auto;
+        padding: 50px 0;
+    }
+ 
+    .milibro-section::after {
+        left: 18px;
+    }
+ 
+    .milibro-patron {
+        width: 160px;
+        height: 160px;
+        top: -30px;
+        right: -30px;
+    }
+ 
+    .milibro-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 24px;
+    }
+ 
+    .milibro-libro {
+        flex: 0 0 auto;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+ 
+    .milibro-titulo {
+        font-size: 38px;
+        text-align: center;
+    }
+ 
+    .milibro-firma {
+        width: 160px;
+        margin: 0 auto 20px;
+    }
+ 
+    .milibro-texto {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+ 
+}

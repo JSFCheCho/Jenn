@@ -293,7 +293,7 @@ body {
 
     left: 2%;
     bottom: 0;
-
+    top: 30%;
     z-index: 4;
 }
 
@@ -344,6 +344,102 @@ body {
     );
 }
 
+.milibro-section {
+    position: relative;
+    width: 100%;
+    min-height: 680px;
+ 
+    background-image: url("../imagenes/Fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    overflow: hidden;
+ 
+    padding: 70px 0;
+}
+
+/* Línea punteada vertical del lado izquierdo */
+.milibro-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 34px;
+ 
+    border-left: 2px dashed rgba(255, 255, 255, 0.28);
+ 
+    z-index: 2;
+}
+ 
+.milibro-container {
+    position: relative;
+    z-index: 4;
+ 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+ 
+.milibro-libro {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.milibro-libro-img {
+    width: 125%;
+    max-width: none;
+    height: auto;
+    display: block;
+ 
+    filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5));
+}
+ 
+.milibro-contenido {
+    flex: 1;
+    color: #ffffff;
+}
+ 
+.milibro-titulo {
+    text-align: right;
+    font-family: "CyGroteskBold", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+ 
+    font-size: 64px;
+    line-height: 1.02;
+ 
+    color: #e3d3f7;
+ 
+    margin: 0 0 14px;
+}
+ 
+.milibro-firma {
+    width: 220px;
+    height: auto;
+ 
+    color: #ee3f6e;
+ 
+    display: block;
+    margin: 0 0 26px auto;
+}
+ 
+.milibro-texto {
+    font-family: "Agrandir", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+ 
+    color: #ffffff;
+    text-align: right;
+ 
+    margin: 0 0 18px;
+}
 
 /* =========================
    SECCIONES
