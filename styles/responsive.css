@@ -261,3 +261,48 @@
     }
 
 }
+
+@media (max-width: 400px) {
+
+    .bio-colombia {
+        width: 210px;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        opacity: 0.45;
+        z-index: 1;
+    }
+
+    .bio-title {
+        left: 50%;
+        top: 38px;
+        transform: translateX(-50%);
+        font-size: 56px;
+        line-height: 1;
+        white-space: nowrap;
+        z-index: 3;
+    }
+
+    .bio-jennifer {
+        width: 300px;
+        left: 50%;
+        top: 120px;
+        bottom: auto;
+        transform: translateX(-50%);
+        z-index: 4;
+    }
+
+    .bio-content {
+        width: 88%;
+        left: 50%;
+        right: auto;
+        top: 44%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    .bio-item p {
+        font-size: 16px;
+        line-height: 1.1;
+    }
+}
