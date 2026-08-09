@@ -1,0 +1,371 @@
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+
+    .name-marquee {
+        height: 64px;
+        position: relative;
+        z-index: 20;
+    }
+
+    .name-marquee-content span {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .name-marquee-content .marquee-dot {
+        margin: 0 24px;
+        font-size: 26px;
+    }
+
+    .name-marquee-track {
+        animation-duration: 16s;
+    }
+
+
+
+    .bio-section {
+        min-height: 1000px;
+        overflow: hidden;
+        top: -9px;
+    }
+
+    .bio-colombia {
+        width: 340px;
+
+        left: 50%;
+        top: 40px;
+
+        transform: translateX(-50%);
+
+        opacity: 0.45;
+
+        z-index: 1;
+    }
+
+    .bio-title {
+        left: 50%;
+        top: 55px;
+
+        transform: translateX(-50%);
+
+        font-size: 96px;
+        line-height: 1;
+
+        white-space: nowrap;
+
+        z-index: 3;
+    }
+
+    .bio-jennifer {
+        width: 460px;
+        left: 50%;
+        top: 180px;
+
+        bottom: auto;
+
+        transform: translateX(-50%);
+
+        z-index: 4;
+    }
+
+    .bio-content {
+        width: 68%;
+        left: 50%;
+        right: auto;
+        top: 44%;
+
+        transform: translateX(-50%);
+
+        z-index: 5;
+    }
+
+    .bio-item p {
+        font-size: 21px;
+        line-height: 1.15;
+    }
+
+    .bio-divider {
+        width: 100%;
+        height: 3px;
+
+        margin: 20px 0;
+
+        background-image: repeating-linear-gradient(
+            to right,
+            #3a0a7f 0,
+            #3a0a7f 22px,
+            transparent 22px,
+            transparent 42px
+        );
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+
+    .site-header {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 0 40px;
+
+        z-index: 100;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: nowrap;
+
+        gap: 30px;
+    }
+
+    .main-nav a {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .hero {
+        position: relative;
+
+        width: 100%;
+        min-height: 100vh;
+
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-logo-jennifer {
+        position: absolute;
+
+        width: 320px;
+        height: auto;
+
+        left: 6%;
+        top: 22%;
+
+        z-index: 3;
+    }
+
+    .hero-circle {
+        position: absolute;
+
+        width: 420px;
+        height: 420px;
+
+        border-radius: 50%;
+
+        background-color: #fc310d;
+
+        right: 6%;
+        bottom: 6%;
+
+        z-index: 1;
+    }
+
+    .hero-photo {
+        position: absolute;
+
+        width: 340px;
+        height: auto;
+
+        right: 5%;
+        bottom: 0;
+
+        z-index: 2;
+    }
+
+    .hero-logo-primero {
+        position: absolute;
+
+        width: 140px;
+        height: auto;
+
+        left: 8%;
+        top: 60%;
+
+        z-index: 4;
+    }
+
+    .hero-podcast {
+        position: absolute;
+
+        width: 380px;
+        height: 80px;
+
+        left: 50%;
+        bottom: 20px;
+
+        transform: translateX(-50%);
+
+        z-index: 6;
+
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .hero-podcast iframe {
+        width: 100%;
+        height: 80px;
+
+        border: none;
+        border-radius: 12px;
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+
+    .site-header {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+
+        padding: 35px 30px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        z-index: 100;
+    }
+
+    .main-nav {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        column-gap: 40px;
+        row-gap: 18px;
+    }
+
+    .main-nav a {
+        font-size: 20px;
+        line-height: 1.2;
+
+        white-space: nowrap;
+    }
+
+    .hero {
+        position: relative;
+
+        width: 100%;
+        min-height: 100vh;
+
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .hero-logo-jennifer {
+        position: absolute;
+
+        width: clamp(260px, 42vw, 480px);
+        height: auto;
+
+        left: 50%;
+        top: 12%;
+
+        transform: translateX(-50%);
+
+        z-index: 4;
+    }
+
+    .hero-circle {
+        position: absolute;
+
+        width: clamp(380px, 50vh, 620px);
+        height: clamp(380px, 50vh, 620px);
+
+        left: 50%;
+        bottom: 120px;
+
+        transform: translateX(-50%);
+
+        background-color: #fc310d;
+
+        z-index: 1;
+    }
+
+    .hero-photo {
+        position: absolute;
+
+        width: auto;
+        height: clamp(420px, 55vh, 650px);
+
+        left: 50%;
+        bottom: 0;
+
+        transform: translateX(-50%);
+
+        z-index: 2;
+    }
+
+    .hero-logo-primero {
+        position: absolute;
+
+        width: clamp(120px, 16vw, 170px);
+        height: auto;
+
+        left: 50%;
+        top: 85%;
+
+        transform: translateX(-50%);
+
+        z-index: 5;
+    }
+
+    .hero-podcast {
+        position: absolute;
+
+        width: clamp(300px, 55vw, 420px);
+        height: 80px;
+
+        left: 50%;
+        bottom: 30px;
+
+        transform: translateX(-50%);
+
+        z-index: 6;
+
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .hero-podcast iframe {
+        width: 100%;
+        height: 80px;
+
+        border: none;
+        border-radius: 12px;
+        display: block;
+    }
+
+}

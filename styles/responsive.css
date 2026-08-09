@@ -1,58 +1,5 @@
-/* =====================================================
-   RESPONSIVE - TABLET
-   ===================================================== */
-
-@media (min-width: 768px) and (max-width: 1100px) {
-
-    .site-header {
-        height: 90px;
-        padding: 0 30px;
-    }
-
-    .main-nav {
-        gap: 25px;
-    }
-
-    .main-nav a {
-        font-size: 16px;
-    }
-
-    .hero-logo-jennifer {
-        width: 360px;
-        left: 5%;
-        top: 20%;
-    }
-
-    .hero-logo-primero {
-        width: 130px;
-        left: 18%;
-        top: 58%;
-    }
-
-    .hero-circle {
-        width: 400px;
-        height: 400px;
-        right: 5%;
-        bottom: 5%;
-    }
-
-    .hero-photo {
-        width: 430px;
-        right: 2%;
-        bottom: 0;
-    }
-}
-
-
-/* =====================================================
-   RESPONSIVE - MÓVIL
-   ===================================================== */
 
 @media (max-width: 767px) {
-
-    /* ---------------------------------------------
-       HEADER
-       --------------------------------------------- */
 
     .site-header {
         position: absolute;
