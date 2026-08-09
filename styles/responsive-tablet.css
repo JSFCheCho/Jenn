@@ -29,7 +29,7 @@
     .bio-section {
         min-height: 1000px;
         overflow: hidden;
-        top: -9px;
+        top: 0;
     }
 
     .bio-colombia {
@@ -370,49 +370,27 @@
 
 }
 
-@media (max-width: 768px) {
- 
-    .milibro-section {
-        min-height: auto;
-        padding: 50px 0;
-    }
- 
-    .milibro-section::after {
-        left: 18px;
-    }
- 
-    .milibro-patron {
-        width: 160px;
-        height: 160px;
-        top: -30px;
-        right: -30px;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
  
     .milibro-container {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 24px;
+        gap: 40px;
+        padding: 0 40px;
     }
  
     .milibro-libro {
-        flex: 0 0 auto;
-        max-width: 220px;
-        margin: 0 auto;
+        flex: 0 0 40%;
     }
  
     .milibro-titulo {
-        font-size: 38px;
-        text-align: center;
+        font-size: 50px;
     }
  
     .milibro-firma {
-        width: 160px;
-        margin: 0 auto 20px;
+        width: 190px;
     }
  
     .milibro-texto {
-        font-size: 15px;
-        line-height: 1.45;
+        font-size: 16px;
     }
  
 }

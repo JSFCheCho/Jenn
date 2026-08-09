@@ -163,7 +163,7 @@
         height: 58px;
         position: relative;
         z-index: 20;
-        top: -8px;
+        top: 0px;
     }
 
     .name-marquee-content span {
@@ -187,7 +187,8 @@
     .bio-section {
         min-height: 1250px;
         overflow: hidden;
-        top: -9px;
+        top: 0;
+        margin-bottom: 0;
     }
 
     .bio-colombia {
@@ -308,48 +309,70 @@
 }
 
 @media (max-width: 768px) {
- 
+
     .milibro-section {
         min-height: auto;
-        padding: 50px 0;
+        padding: 0 0 30px;
+        margin-top: 0;
+        border-top: none;
     }
- 
-    .milibro-section::after {
-        left: 18px;
-    }
- 
+
     .milibro-patron {
         width: 160px;
         height: 160px;
         top: -30px;
         right: -30px;
     }
- 
+
     .milibro-container {
         flex-direction: column;
-        gap: 30px;
-        padding: 0 24px;
+        gap: -10px;
+        padding: 0 45px;
+        align-items: center;
+        transform: translateY(-100px);
     }
- 
+
     .milibro-libro {
         flex: 0 0 auto;
+        width: 100%;
         max-width: 220px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
- 
-    .milibro-titulo {
-        font-size: 38px;
+
+    .milibro-libro-img {
+        width: 125%;
+        max-width: none;
+        height: auto;
+        display: block;
+    }
+
+    /* TEXTO */
+    .milibro-contenido {
+        width: 100%;
+        flex: none;
+        margin-top: -10px;
         text-align: center;
     }
- 
+
+    .milibro-titulo {
+        font-size: 38px;
+        line-height: 1;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+
     .milibro-firma {
         width: 160px;
-        margin: 0 auto 20px;
+        margin: 0 auto 15px;
     }
- 
+
     .milibro-texto {
         font-size: 15px;
         line-height: 1.45;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
- 
 }
