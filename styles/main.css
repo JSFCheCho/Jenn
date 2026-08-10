@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Cy Grotesk Grand";
     src: url("../fuentes/CyGroteskGrand.ttf") format("truetype");
@@ -100,6 +98,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+
+    min-height: 100vh;
 }
 
 .hero-logo-jennifer {
@@ -253,6 +261,16 @@ body {
     background-repeat: no-repeat;
 
     overflow: hidden;
+}
+
+.bio-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+
+    min-height: 720px;
 }
 
 .bio-colombia {
