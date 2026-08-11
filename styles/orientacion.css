@@ -1,7 +1,9 @@
 .overlay-rotacion {
+
     display: none;
 
     position: fixed;
+
     inset: 0;
 
     width: 100vw;
@@ -19,12 +21,15 @@
     text-align: center;
 
     padding: 24px;
+
     box-sizing: border-box;
 }
 
 
 .overlay-rotacion .icono-rotar {
+
     font-size: 64px;
+
     margin-bottom: 20px;
 
     animation: girar-icono 1.6s ease-in-out infinite;
@@ -32,24 +37,28 @@
 
 
 .overlay-rotacion h2 {
+
     font-family: "Agrandir", sans-serif;
 
-    font-size: 22px;
+    font-size: 24px;
 
-    margin: 0 0 10px;
+    margin: 0 0 12px;
 }
 
 
 .overlay-rotacion p {
+
     font-family: "Agrandir", sans-serif;
 
-    font-size: 15px;
+    font-size: 16px;
 
-    opacity: 0.85;
+    line-height: 1.4;
+
+    opacity: 0.9;
 
     margin: 0;
 
-    max-width: 280px;
+    max-width: 320px;
 }
 
 
@@ -71,29 +80,18 @@
 
 
 body.bloqueo-rotacion {
+
     overflow: hidden !important;
 }
 
 
 body.bloqueo-rotacion > *:not(.overlay-rotacion) {
+
     display: none !important;
 }
 
 
 body.bloqueo-rotacion .overlay-rotacion {
+
     display: flex !important;
-}
-
-
-
-@media (orientation: landscape) and (max-height: 600px) {
-
-    body > *:not(.overlay-rotacion) {
-        display: none !important;
-    }
-
-    .overlay-rotacion {
-        display: flex !important;
-    }
-
 }
