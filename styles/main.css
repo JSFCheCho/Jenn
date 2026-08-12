@@ -459,6 +459,160 @@ body {
     margin: 0 0 18px;
 }
 
+.causas-section {
+    position: relative;
+    z-index: 2;
+ 
+    width: 100%;
+    min-height: 780px;
+ 
+    background-color: #dcc6e6;
+    background-image: url("../imagenes/Fondo Perros.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    overflow: visible;
+}
+ 
+.causas-container {
+    position: relative;
+ 
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100%;
+ 
+    padding-top: 90px;
+    padding-bottom: 90px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+ 
+.causas-texto {
+    position: relative;
+    z-index: 2;
+ 
+    max-width: 560px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+ 
+    text-align: right;
+}
+ 
+.causas-titulo-wrap {
+    position: relative;
+ 
+    display: inline-block;
+}
+ 
+.causas-titulo {
+    font-family: "CyGroteskBold", sans-serif;
+    color: #3a0a7f;
+ 
+    font-size: 86px;
+    line-height: 0.95;
+ 
+    text-transform: uppercase;
+    text-align: right;
+ 
+    margin: 0 0 24px;
+}
+ 
+.causas-linea {
+    position: absolute;
+    z-index: 5;
+ 
+    width: 130px;
+    height: auto;
+ 
+    left: -6px;
+    bottom: 34%;
+}
+ 
+.causas-descripcion {
+    font-family: "Agrandir", sans-serif;
+    color: #3a0a7f;
+ 
+    font-size: 25px;
+    line-height: 1.45;
+ 
+    text-align: right;
+ 
+    margin: 0 0 28px;
+}
+ 
+.causas-boton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+ 
+    background-color: #ee3f6e;
+    color: #ffffff !important;
+ 
+    font-family: "Agrandir", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+ 
+    border: none;
+    border-radius: 0;
+ 
+    padding: 10px 42px;
+ 
+    text-decoration: none;
+}
+ 
+.causas-boton:hover {
+    background-color: #d4335e;
+    color: #ffffff;
+}
+ 
+.causas-recurso {
+    position: relative;
+    z-index: 2;
+ 
+    display: block;
+    text-decoration: none;
+}
+ 
+.causas-recurso-caja {
+    width: 520px;
+    height: 480px;
+ 
+    background-color: #ffffff;
+    border: 2px solid #000000;
+ 
+    /* placeholder: reemplazar por <img> real cuando exista */
+}
+ 
+.causas-recurso-texto {
+    font-family: "Agrandir", sans-serif;
+    color: #3a0a7f;
+    font-weight: bold;
+ 
+    text-align: center;
+ 
+    margin-top: 16px;
+}
+ 
+.causas-pajaros {
+    position: absolute;
+    z-index: 1;
+ 
+    left: -30px;
+    bottom: -280px;
+ 
+    width: 300px;
+    height: auto;
+ 
+    pointer-events: none;
+}
 /* =========================
    SECCIONES
    ========================= */
