@@ -557,30 +557,69 @@ body {
 }
  
 .causas-boton {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
+    justify-content: center;
     gap: 10px;
- 
-    background-color: #ee3f6e;
+
+    width: auto;
+    height: auto;
+
+    background-color: #ee3f6e !important;
     color: #ffffff !important;
- 
+
     font-family: "Agrandir", sans-serif;
     font-weight: bold;
     font-size: 18px;
- 
-    border: none;
-    border-radius: 0;
- 
+
+    border: none !important;
+    border-radius: 0 !important;
+
     padding: 10px 42px;
- 
-    text-decoration: none;
+
+    text-decoration: none !important;
+
+    position: relative;
+    z-index: 10;
+
+    transform-origin: center;
+}
+
+.causas-boton::before,
+.causas-boton::after {
+    content: none !important;
+    display: none !important;
 }
  
 .causas-boton:hover {
     background-color: #d4335e;
     color: #ffffff;
+    animation: causasPendulo 0.45s ease-in-out infinite;
 }
- 
+
+@keyframes causasPendulo {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .causas-recurso {
     position: relative;
     z-index: 2;
@@ -621,6 +660,96 @@ body {
  
     pointer-events: none;
 }
+
+.plg-section {
+    position: relative;
+    width: 100%;
+    min-height: 680px;
+
+    background-image: url("../imagenes/Fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+.plg-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 680px;
+
+    margin: 0 auto;
+}
+
+.plg-contenido {
+    position: absolute;
+
+    width: 390px;
+
+    left: 55px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+.plg-logo {
+    width: 100%;
+    max-width: 390px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 18px;
+}
+
+.plg-texto {
+    width: 100%;
+
+    font-family: "Agrandir", sans-serif;
+
+    /* mismo tamaño que Causas */
+    font-size: 15px;
+    line-height: 1.18;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    margin: 0 auto 18px;
+}
+
+.plg-contenido .causas-boton {
+    font-size: 15px;
+
+    margin: 0 auto;
+}
+
+.plg-colombia {
+    position: absolute;
+
+    width: 430px;
+    height: auto;
+
+    right: 80px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 3;
+}
+
 /* =========================
    SECCIONES
    ========================= */
