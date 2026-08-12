@@ -414,4 +414,134 @@
         font-size: 16px;
     }
  
-}
+
+    
+@media (min-width: 768px) 
+       and (max-width: 1199px) 
+       and (orientation: portrait) {
+
+    #causas {
+        min-height: auto;
+    }
+
+    .causas-section {
+        width: 100%;
+        min-height: auto;
+
+        padding: 90px 40px 100px;
+
+        overflow: hidden;
+    }
+
+    .causas-container {
+        width: 100%;
+        max-width: 850px;
+
+        min-height: auto;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 0;
+    }
+
+
+    .causas-texto {
+        display: contents;
+    }
+    .causas-titulo-wrap {
+        order: 1;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 45px;
+    }
+
+    .causas-titulo {
+        font-size: clamp(68px, 10vw, 100px);
+
+        line-height: 0.92;
+
+        text-align: center;
+
+        margin: 0;
+    }
+
+
+    .causas-pajaros,
+    .causas-linea {
+        display: none !important;
+    }
+
+    .causas-recurso {
+        order: 2;
+
+        width: 100%;
+        max-width: 480px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 auto 45px;
+
+        text-align: center;
+    }
+
+    .causas-recurso-caja {
+        width: 100%;
+        height: 380px;
+
+        background-color: #ffffff;
+
+        border: 2px solid #000000;
+    }
+
+    .causas-recurso-texto {
+        margin: 15px 0 0;
+
+        font-size: 17px;
+        line-height: 1.25;
+
+        text-align: center;
+    }
+
+    .causas-descripcion {
+        order: 3;
+
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto 35px;
+
+        font-size: 23px;
+        line-height: 1.45;
+
+        text-align: center;
+    }
+
+    .causas-boton {
+        order: 4;
+
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+
+        padding: 13px 42px;
+
+        font-size: 19px;
+    }
+
+}}
