@@ -513,6 +513,9 @@ body {
 }
  
 .causas-titulo {
+    position: relative;
+    z-index: 2;
+
     font-family: "CyGroteskBold", sans-serif;
     color: #3a0a7f;
  
@@ -525,15 +528,20 @@ body {
     margin: 0 0 24px;
 }
  
-.causas-linea {
+.causas-linea { 
     position: absolute;
-    z-index: 5;
- 
-    width: 130px;
+
+    width: 200px;
     height: auto;
- 
-    left: -6px;
-    bottom: 34%;
+
+    left: -10px;
+    top: 50px;
+
+    z-index: 10;
+
+    pointer-events: none;
+    overflow: visible;
+
 }
  
 .causas-descripcion {
@@ -606,9 +614,9 @@ body {
     z-index: 1;
  
     left: -30px;
-    bottom: -280px;
+    bottom: -250px;
  
-    width: 300px;
+    width: 400px;
     height: auto;
  
     pointer-events: none;
