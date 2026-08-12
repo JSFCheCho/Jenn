@@ -653,9 +653,9 @@ body {
     z-index: 1;
  
     left: -30px;
-    bottom: -250px;
+    bottom: -200px;
  
-    width: 400px;
+    width: 300px;
     height: auto;
  
     pointer-events: none;
@@ -665,90 +665,90 @@ body {
     position: relative;
     width: 100%;
     min-height: 680px;
-
+ 
     background-image: url("../imagenes/Fondo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+ 
     overflow: hidden;
 }
-
-
+ 
 .plg-container {
     position: relative;
     width: 100%;
-    max-width: 1400px;
-    min-height: 680px;
-
+    max-width: 1320px;          /* mismo max-width que causas-container */
     margin: 0 auto;
+    min-height: 680px;
+ 
+    padding: 60px 40px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;    /* antes: space-between -> ahora centrado, igual que causas */
+    gap: 60px;                  /* mismo gap que causas-container */
+    flex-wrap: wrap;
 }
-
+ 
 .plg-contenido {
-    position: absolute;
-
+    position: static;
+ 
     width: 390px;
-
-    left: 55px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
+    flex: 0 0 390px;
+ 
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
+    align-items: flex-end;      /* igual que .causas-texto -> todo pegado a la derecha */
+ 
+    text-align: right;
+ 
     z-index: 5;
 }
-
+ 
 .plg-logo {
     width: 100%;
     max-width: 390px;
-
+ 
     height: auto;
-
+ 
     display: block;
-
-    margin: 0 auto 18px;
+ 
+    margin: 0 0 18px;
 }
-
+ 
 .plg-texto {
-    width: 100%;
-
+    width: 560px;
+    max-width: 560px;
+ 
     font-family: "Agrandir", sans-serif;
 
-    /* mismo tamaño que Causas */
-    font-size: 15px;
-    line-height: 1.18;
-
+    font-size: 25px;
+    line-height: 1.45;
+ 
     color: #ffffff;
-
-    text-align: center;
-
-    margin: 0 auto 18px;
+ 
+    text-align: right;
+ 
+    margin: 0 0 24px;
 }
-
+ 
 .plg-contenido .causas-boton {
-    font-size: 15px;
-
-    margin: 0 auto;
+    font-size: 18px;   
+    padding: 10px 42px;
+ 
+    margin: 0;
 }
-
+ 
 .plg-colombia {
-    position: absolute;
-
+    position: static;
+ 
     width: 430px;
+    flex: 0 0 430px;
     height: auto;
-
-    right: 80px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
+ 
     z-index: 3;
 }
+
 
 /* =========================
    SECCIONES

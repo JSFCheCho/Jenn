@@ -545,3 +545,83 @@
     }
 
 }}
+
+@media (max-width: 767px) {
+ 
+    .plg-section {
+        width: 100%;
+        min-height: auto;
+ 
+        padding: 70px 20px 80px;
+ 
+        overflow: hidden;
+    }
+ 
+    .plg-container {
+        width: 100%;
+        max-width: 100%;
+ 
+        min-height: auto;
+ 
+        padding: 0;
+ 
+        display: flex;
+        flex-direction: column;
+ 
+        align-items: center;
+        justify-content: flex-start;
+ 
+        gap: 0;
+    }
+ 
+    .plg-contenido {
+        display: contents;
+    }
+ 
+    .plg-logo {
+        order: 1;
+ 
+        width: 100%;
+        max-width: 220px;
+ 
+        margin: 0 auto 30px;
+    }
+ 
+    .plg-colombia {
+        order: 2;
+ 
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+ 
+        margin: 0 auto 30px;
+    }
+ 
+    .plg-texto {
+        order: 3;
+ 
+        width: 100%;
+        max-width: 500px;
+ 
+        margin: 0 auto 28px;
+ 
+        font-size: 18px;
+        line-height: 1.4;
+ 
+        text-align: center;
+    }
+ 
+    .plg-contenido .causas-boton {
+        order: 4;
+ 
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+ 
+        margin: 0 auto;
+ 
+        padding: 11px 30px;
+        font-size: 16px;
+    }
+ 
+}
