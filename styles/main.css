@@ -635,7 +635,7 @@ body {
     background-color: #ffffff;
     border: 2px solid #000000;
  
-    /* placeholder: reemplazar por <img> real cuando exista */
+
 }
  
 .causas-recurso-texto {
@@ -652,13 +652,21 @@ body {
     position: absolute;
     z-index: 1;
  
-    left: -30px;
-    bottom: -200px;
+    left: -25px;
+    top: 700px;;
  
-    width: 300px;
+    width: 325px;
     height: auto;
  
     pointer-events: none;
+}
+
+@media (max-width: 1164px) {
+ 
+    .causas-pajaros {
+        display: none !important;
+    }
+ 
 }
 
 .plg-section {
