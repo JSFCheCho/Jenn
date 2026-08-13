@@ -648,6 +648,72 @@ body {
     margin-top: 16px;
 }
  
+
+
+@media (max-width: 1350px) {
+ 
+    .causas-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+ 
+        gap: 0;
+    }
+
+    .causas-texto {
+        display: contents;
+    }
+ 
+    .causas-titulo-wrap {
+        order: 1;
+ 
+        width: 100%;
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        margin: 0 auto 20px;
+    }
+ 
+    .causas-titulo {
+        text-align: center;
+    }
+ 
+
+    .causas-linea {
+        left: 50%;
+        max-width: 150px;
+        top: 120px;
+        transform: translateX(-50%);
+    }
+ 
+    .causas-descripcion {
+        order: 2;
+ 
+        width: 100%;
+        max-width: 700px;
+ 
+        margin: 0 auto 28px;
+ 
+        text-align: center;
+    }
+ 
+    .causas-recurso {
+        order: 3;
+ 
+        margin: 0 auto 28px;
+    }
+ 
+    .causas-boton {
+        order: 4;
+ 
+        margin: 0 auto;
+    }
+ 
+}
+
+
 .causas-pajaros {
     position: absolute;
     z-index: 1;
@@ -661,7 +727,7 @@ body {
     pointer-events: none;
 }
 
-@media (max-width: 1164px) {
+@media (max-width: 1350px) {
  
     .causas-pajaros {
         display: none !important;
@@ -685,7 +751,7 @@ body {
 .plg-container {
     position: relative;
     width: 100%;
-    max-width: 1320px;          /* mismo max-width que causas-container */
+    max-width: 1320px;          
     margin: 0 auto;
     min-height: 680px;
  
@@ -693,9 +759,8 @@ body {
  
     display: flex;
     align-items: center;
-    justify-content: center;    /* antes: space-between -> ahora centrado, igual que causas */
-    gap: 60px;                  /* mismo gap que causas-container */
-    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 60px;                
 }
  
 .plg-contenido {
@@ -706,7 +771,7 @@ body {
  
     display: flex;
     flex-direction: column;
-    align-items: flex-end;      /* igual que .causas-texto -> todo pegado a la derecha */
+    align-items: flex-end;     
  
     text-align: right;
  
@@ -757,6 +822,51 @@ body {
     z-index: 3;
 }
 
+@media (max-width: 1350px) {
+ 
+    .plg-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+ 
+        gap: 0;
+    }
+ 
+    .plg-contenido {
+        order: 1;
+ 
+        width: 100%;
+        max-width: 700px;
+ 
+        margin: 0 auto 28px;
+ 
+        text-align: center;
+        align-items: center;      
+    }
+ 
+    .plg-logo {
+        margin: 0 auto 18px;
+    }
+ 
+    .plg-texto {
+        width: 100%;
+        max-width: 700px;
+ 
+        margin: 0 auto 24px;
+ 
+        text-align: center;
+    }
+ 
+    .plg-colombia {
+        order: 2;
+ 
+        max-width: 200px;
+        max-width: 700px;
+ 
+        margin: 0 auto;
+    }
+ 
+}
 
 /* =========================
    SECCIONES
