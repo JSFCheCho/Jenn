@@ -33,11 +33,27 @@ html {
 body {
     min-height: 100vh;
     font-family: "Cy Grotesk Grand", sans-serif;
+    -webkit-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;
+}
+
+input,
+textarea,
+select,
+[contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 html, body {
     overflow-x: hidden;
 }
+
+
 
 
 /* =========================
