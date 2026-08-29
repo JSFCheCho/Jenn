@@ -35,6 +35,10 @@ body {
     font-family: "Cy Grotesk Grand", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 
 /* =========================
    HEADER
@@ -252,7 +256,7 @@ body {
 
 .bio-section {
     position: relative;
-    width: 100%;
+    width: 105%;
     min-height: 720px;
 
     background-image: url("../imagenes/Fondo Perros.png");
@@ -306,12 +310,12 @@ body {
 .bio-jennifer {
     position: absolute;
 
-    width: 590px;
+    width: 630px;
     height: auto;
 
     left: 2%;
     bottom: 0;
-    top: 30%;
+    top: 15%;
     z-index: 4;
 }
 
@@ -411,7 +415,7 @@ body {
 }
  
 .milibro-libro-img {
-    width: 125%;
+    width: 100%;
     max-width: none;
     height: auto;
     display: block;
@@ -497,7 +501,7 @@ body {
     position: relative;
     z-index: 2;
  
-    max-width: 560px;
+    max-width: 600px;
  
     display: flex;
     flex-direction: column;
@@ -630,13 +634,29 @@ body {
  
 .causas-recurso-caja {
     width: 520px;
-    height: 480px;
+    height: 440px;
  
     background-color: #ffffff;
     border: 2px solid #000000;
+    overflow: hidden; 
+    padding: 5px;
+    box-sizing: border-box;
  
 
 }
+
+.causas-recurso-img {
+    width: 100%;
+    height: 100%;
+ 
+    object-fit: contain;
+    display: block;
+}
+
+.causas-recurso:hover .causas-recurso-img {
+    opacity: 0.92;
+}
+
  
 .causas-recurso-texto {
     font-family: "Agrandir", sans-serif;
@@ -719,7 +739,7 @@ body {
     z-index: 1;
  
     left: -25px;
-    top: 700px;;
+    top: 500px;;
  
     width: 325px;
     height: auto;
