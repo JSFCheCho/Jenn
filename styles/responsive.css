@@ -226,7 +226,7 @@
     }
 
     .bio-jennifer {
-        width: min(82vw, 380px);
+        width: min(82vw, 3600px);
         left: 50%;
         top: 150px;
 
@@ -241,7 +241,7 @@
         width: 82%;
         left: 50%;
         right: auto;
-        top: 46%;
+        top: 50%;
 
         transform: translateX(-50%);
 
@@ -593,6 +593,42 @@
  
         padding: 11px 30px;
         font-size: 16px;
+    }
+ 
+}
+
+@media (max-width: 767px) {
+ 
+    .medios-section {
+        padding: 45px 0 55px;
+    }
+ 
+    .medios-titulo {
+        font-size: 28px;
+    }
+ 
+    .medios-titulo strong {
+        font-size: 40px;
+    }
+ 
+    .medios-firma {
+        width: 110px;
+        margin-bottom: 24px;
+    }
+ 
+    /* En móvil se apila a 1 columna y se quita la línea decorativa,
+       ya que solo tiene sentido separando 2 columnas */
+    .medios-linea-decorativa {
+        display: none;
+    }
+ 
+    .medios-galeria {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+ 
+    .medios-item {
+        aspect-ratio: 16 / 9;
     }
  
 }

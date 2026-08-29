@@ -625,3 +625,29 @@
     }
  
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+ 
+    .medios-section {
+        padding: 55px 0 70px;
+    }
+ 
+    .medios-titulo {
+        font-size: 36px;
+    }
+ 
+    .medios-titulo strong {
+        font-size: 52px;
+    }
+ 
+    .medios-firma {
+        width: 140px;
+        margin-bottom: 30px;
+    }
+ 
+    .medios-galeria {
+        gap: 32px 40px;
+    }
+ 
+}
+ 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <script src="funciones/orientacion.js" defer></script>
+    <script src="funciones/medios.js" defer></script>
 </head>
 
 <body>
@@ -390,7 +391,44 @@
             </div>
         </section>
 
-        <section id="medios"></section>
+        <section id="medios" class="medios-section">
+            <div class="container medios-container">
+            
+                    <div class="medios-encabezado">
+                        <h2 class="medios-titulo">
+                            En los<br>
+                            <strong>MEDIOS</strong>
+                        </h2>
+            
+                        <img
+                            src="imagenes/Propuesta grafica-08.png"
+                            alt=""
+                            class="medios-firma"
+                            aria-hidden="true"
+                        >
+                    </div>
+            
+                    <div class="medios-galeria-wrap">
+            
+                        <div class="medios-linea-decorativa" aria-hidden="true"></div>
+            
+                        <!--
+                            Las tarjetas (imagen + link) se generan por JavaScript
+                            desde funciones/medios.js -> NO agregues <a> a mano acá,
+                            edita el array "mediosData" en ese archivo.
+                        -->
+                        <div class="medios-galeria" id="medios-galeria"></div>
+            
+                    </div>
+            
+                    <div class="medios-boton-wrap">
+                        <button type="button" id="medios-cargar-mas" class="medios-boton">
+                            Cargar más <span aria-hidden="true">↓</span>
+                        </button>
+                    </div>
+            
+                </div>
+        </section>
         <section id="blog"></section>
 
     </main>
