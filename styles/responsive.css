@@ -226,7 +226,7 @@
     }
 
     .bio-jennifer {
-        width: min(82vw, 3600px);
+        width: min(87vw, 3600px);
         left: 50%;
         top: 100px;
 
@@ -319,7 +319,7 @@
 
     .milibro-section {
         min-height: auto;
-        padding: 0 0 30px;
+        padding: 0 0 5px;
         margin-top: 0;
         border-top: none;
     }
@@ -333,7 +333,7 @@
 
     .milibro-container {
         flex-direction: column;
-        gap: -10px;
+        gap: 4px;
         padding: 0 45px;
         align-items: center;
         transform: translateY(-100px);
@@ -359,7 +359,7 @@
     .milibro-contenido {
         width: 100%;
         flex: none;
-        margin-top: -10px;
+        margin-top: -16px;
         text-align: center;
     }
 
@@ -368,19 +368,23 @@
         line-height: 1;
         text-align: center;
         margin: 0 0 10px;
+        margin-bottom: 6px; 
     }
 
     .milibro-firma {
         width: 160px;
-        margin: 0 auto 15px;
+        margin: 0 auto 10px;
     }
 
     .milibro-texto {
-        font-size: 15px;
-        line-height: 1.45;
+        font-size: 16px;
+        line-height: 1.75;
+        width: calc(100% + 40px); 
+        max-width: calc(100% + 40px);
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -656,40 +660,40 @@
 }
 
 @media (max-width: 768px){
-
+ 
     .footer-pg{
         padding: 45px 0 20px;
         text-align: center;
     }
-
+ 
     .footer-pg h5{
         font-size: 1.3rem;
     }
-
+ 
     .footer-pg h6{
         margin-top: 10px;
-        font-size: 1rem;
+        text-align: center;
     }
-
+ 
     .footer-pg ul{
-        margin-bottom: 20px;
+        margin-bottom: 20px;      
+        text-align: center;
     }
-
+ 
     .redes-sociales{
         justify-content: center;
         margin-top: 15px;
     }
-
+ 
     .redes-sociales a{
         width: 42px;
         height: 42px;
         font-size: 1.1rem;
     }
-
+ 
     .copyright{
         font-size: .85rem;
         line-height: 1.6;
     }
-
-}
  
+}
