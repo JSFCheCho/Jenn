@@ -632,3 +632,64 @@
     }
  
 }
+
+@media (max-width: 767px) {
+ 
+    .blog-section {
+        padding: 45px 0 55px;
+    }
+ 
+    .blog-titulo {
+        font-size: 40px;
+    }
+ 
+    .blog-firma {
+        width: 110px;
+        margin-bottom: 24px;
+    }
+ 
+    .blog-galeria {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+ 
+}
+
+@media (max-width: 768px){
+
+    .footer-pg{
+        padding: 45px 0 20px;
+        text-align: center;
+    }
+
+    .footer-pg h5{
+        font-size: 1.3rem;
+    }
+
+    .footer-pg h6{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .footer-pg ul{
+        margin-bottom: 20px;
+    }
+
+    .redes-sociales{
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .redes-sociales a{
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .copyright{
+        font-size: .85rem;
+        line-height: 1.6;
+    }
+
+}
+ 

@@ -1102,20 +1102,251 @@ html, body {
     background-color: #d4335e;
 }
  
-/* Se agrega por JS cuando ya no quedan más imágenes por cargar */
+
 .medios-boton.oculto {
     display: none;
 }
 
+.blog-section {
+    position: relative;
+    width: 100%;
+ 
+    background-color: #2e0756;
+    background-image: url("../imagenes/Fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    overflow: hidden;
+ 
+    padding: 70px 0 90px;
+}
+ 
+.blog-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+ 
+    background-color: #ee3f6e;
+}
+ 
+.blog-container {
+    width: 100%;
+    max-width: 1100px;
+ 
+    margin: 0 auto;
+    padding: 0 24px;
+}
+ 
+.blog-encabezado {
+    margin-bottom: 10px;
+}
+ 
+.blog-titulo {
+    font-family: "CyGroteskBold", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e3d3f7;
+ 
+    font-size: 68px;
+    line-height: 0.95;
+ 
+    margin: 0;
+}
+ 
+.blog-firma {
+    width: 170px;
+    height: auto;
+ 
+    display: block;
+    margin: 6px 0 40px -6px;
+}
+ 
+.blog-galeria-wrap {
+    position: relative;
+}
+ 
+.blog-galeria {
+    position: relative;
+    z-index: 2;
+ 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 800px));
+    justify-content: center;
+    gap: 44px 70px;
+}
+ 
+.blog-item {
+    position: relative;
+ 
+    display: block;
+ 
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 8 / 5;
+    margin: 0 auto;
+ 
+    overflow: hidden;
+    border: 10.5px solid #e65d7d;   /* único borde que cambia respecto a Medios */
+ 
+    text-decoration: none;
+}
+ 
+.blog-item img {
+    width: 100%;
+    height: 100%;
+ 
+    object-fit: cover;
+    display: block;
+ 
+    transition: filter 0.25s ease;
+}
+ 
+.blog-item:hover img {
+    filter: grayscale(100%);
+}
+ 
+.blog-item::after {
+    content: "Clic aquí para ver";
+ 
+    position: absolute;
+    inset: 0;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+ 
+    background-color: rgba(58, 10, 127, 0.55);
+ 
+    color: #ffffff;
+    font-family: "Agrandir", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+ 
+    opacity: 0;
+    transition: opacity 0.25s ease;
+ 
+    pointer-events: none;
+}
+ 
+.blog-item:hover::after {
+    opacity: 1;
+}
+ 
+.blog-boton-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+ 
+.blog-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+ 
+    background-color: #ee3f6e;
+    color: #ffffff;
+ 
+    font-family: "Agrandir", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+ 
+    border: none;
+    border-radius: 999px;
+ 
+    padding: 11px 32px;
+ 
+    cursor: pointer;
+}
+ 
+.blog-boton:hover {
+    background-color: #d4335e;
+}
+ 
+.blog-boton.oculto {
+    display: none;
+}
 
-/* =========================
-   SECCIONES
-   ========================= */
+.footer-pg{
+    background-color: #430E2B;
+    color: #fff;
+    padding: 60px 0 25px;
+}
 
-#causas,
-#bio,
-#plg,
-#medios,
-#blog {
-    min-height: 100vh;
+.footer-pg h5{
+    font-family: "Cy Grotesk", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-pg h6{
+    font-family: "Cy Grotesk", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-pg p,
+.footer-pg li,
+.footer-pg a{
+    font-family: "Agrandir", sans-serif;
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-pg ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-pg li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-pg a:hover{
+    color: #47F9F1;
+}
+
+.footer-pg hr{
+    border-color: rgba(255,255,255,.15);
+    margin: 35px 0 20px;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales a{
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,.08);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.redes-sociales a:hover{
+    background: #47F9F1;
+    color: #430E2B;
+    transform: translateY(-4px);
+}
+
+.copyright{
+    text-align: center;
+    font-family: "Agrandir", sans-serif;
+    font-size: .95rem;
+    color: rgba(255,255,255,.7);
+    margin: 0;
 }

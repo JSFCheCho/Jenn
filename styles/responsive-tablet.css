@@ -650,4 +650,24 @@
     }
  
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
  
+    .blog-section {
+        padding: 55px 0 70px;
+    }
+ 
+    .blog-titulo {
+        font-size: 52px;
+    }
+ 
+    .blog-firma {
+        width: 140px;
+        margin-bottom: 30px;
+    }
+ 
+    .blog-galeria {
+        gap: 32px 40px;
+    }
+ 
+}
