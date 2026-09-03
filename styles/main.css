@@ -470,13 +470,13 @@ html, body {
  
 .milibro-texto {
     font-family: "Agrandir", sans-serif;
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 20px;
+    line-height: 1.6;
  
     color: #ffffff;
     text-align: right;
  
-    margin: 0 0 18px;
+    margin: 0 0 20px;
 }
 
 .causas-section {
