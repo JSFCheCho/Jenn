@@ -1130,7 +1130,7 @@ html, body {
     right: 0;
     height: 6px;
  
-    background-color: #ee3f6e;
+    background-color: #502673;
 }
  
 .blog-container {
@@ -1362,7 +1362,7 @@ html, body {
 .footer-admin-link {
     font-family: "Agrandir", sans-serif;
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.45);   /* discreto, no llama la atención */
+    color: rgba(255, 255, 255, 0.45);   
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -1371,12 +1371,7 @@ html, body {
     color: #47F9F1;
 }
  
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        gap: 8px;
-    }
-}
+
 
 .login-section {
     min-height: 100vh;
