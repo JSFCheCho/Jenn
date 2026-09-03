@@ -23,7 +23,6 @@
     }
 
 
-
     .bio-section {
         min-height: 1000px;
         overflow: hidden;
@@ -58,26 +57,26 @@
 
         white-space: nowrap;
 
-        z-index: 3;
+        z-index: 4;
     }
 
     .bio-jennifer {
-        width: 460px;
+        width: 380px;
         left: 50%;
-        top: 180px;
+        top: 100px;
 
         bottom: auto;
 
         transform: translateX(-50%);
 
-        z-index: 4;
+        z-index: 3;
     }
 
     .bio-content {
         width: 68%;
         left: 50%;
         right: auto;
-        top: 44%;
+        top: 45%;
 
         transform: translateX(-50%);
 
@@ -390,6 +389,7 @@
     }
 
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
  
