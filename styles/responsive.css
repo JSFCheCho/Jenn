@@ -695,5 +695,9 @@
         font-size: .85rem;
         line-height: 1.6;
     }
+
+    .footer-bottom, .footer-admin-link {
+        display: none !important;
+    }
  
 }

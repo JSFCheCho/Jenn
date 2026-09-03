@@ -700,5 +700,9 @@
     .copyright{
         font-size: .9rem;
     }
+
+    .footer-bottom, .footer-admin-link {
+    display: none !important;
+    }
  
 }

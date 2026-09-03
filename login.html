@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión — Jennifer Pedraza</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<section class="login-section">
+    <div class="login-caja">
+
+        <h1 class="login-titulo">Iniciar sesión</h1>
+        <p class="login-subtitulo">Acceso para el equipo de administración del sitio.</p>
+
+        <div id="loginError" class="login-error d-none"></div>
+
+        <form id="formLogin" class="login-form" novalidate>
+
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" id="correo" class="form-control" required autocomplete="username">
+            </div>
+
+            <div class="mb-4">
+                <label for="clave" class="form-label">Contraseña</label>
+                <input type="password" id="clave" class="form-control" required autocomplete="current-password">
+            </div>
+
+            <button type="submit" id="btnLogin" class="btn login-boton w-100">
+                Entrar
+            </button>
+
+        </form>
+
+        <a href="index.html" class="login-volver">
+            <i class="bi bi-arrow-left me-1"></i>Volver al sitio
+        </a>
+
+    </div>
+</section>
+
+<!-- Firebase (SDK "compat", para poder usarlo directo con <script>, sin build tools) -->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+
+<script src="funciones/firebase-config.js"></script>
+<script src="funciones/login.js"></script>
+
+</body>
+</html>

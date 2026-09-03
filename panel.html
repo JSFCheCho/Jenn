@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel de administración — Jennifer Pedraza</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="panel-body">
+
+<!-- Se muestra mientras se confirma la sesión, para que nadie vea el panel ni un instante sin estar logueado -->
+<div id="panelCargando" class="panel-cargando">
+    <div class="spinner-border" role="status" style="color:#ee3f6e;"></div>
+</div>
+
+<div id="panelContenido" class="d-none">
+
+    <header class="panel-header">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <div>
+                <h1 class="panel-titulo">Panel de administración</h1>
+                <p class="panel-usuario" id="panelUsuarioEmail"></p>
+            </div>
+            <button type="button" id="btnLogout" class="btn panel-boton-logout">
+                <i class="bi bi-box-arrow-right me-1"></i>Cerrar sesión
+            </button>
+        </div>
+    </header>
+
+    <main class="container panel-main">
+
+        <!-- ============ FORMULARIO DE CARGA ============ -->
+        <section class="panel-card">
+
+            <h2 class="panel-card-titulo">Subir nueva entrada</h2>
+
+            <div id="panelMensaje" class="panel-mensaje d-none"></div>
+
+            <form id="formSubida" class="panel-form">
+
+                <div class="mb-3">
+                    <label for="seccion" class="form-label">Sección</label>
+                    <select id="seccion" class="form-select" required>
+                        <option value="medios">Medios</option>
+                        <option value="blog">Blog</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Imagen</label>
+                    <input type="file" id="imagen" class="form-control" accept="image/*" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="link" class="form-label">Link (a dónde lleva al hacer clic)</label>
+                    <input type="url" id="link" class="form-control" placeholder="https://..." required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción corta (para accesibilidad)</label>
+                    <input type="text" id="descripcion" class="form-control" placeholder="Ej: Entrevista sobre el proyecto de ley X">
+                </div>
+
+                <button type="submit" id="btnSubir" class="btn panel-boton-primario">
+                    Publicar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- ============ LISTA / BORRAR ============ -->
+        <section class="panel-card">
+
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <h2 class="panel-card-titulo mb-0">Entradas publicadas</h2>
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn panel-tab activo" data-seccion="medios">Medios</button>
+                    <button type="button" class="btn panel-tab" data-seccion="blog">Blog</button>
+                </div>
+            </div>
+
+            <div id="listaEntradas" class="panel-lista">
+                <p class="text-secondary">Cargando...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+
+<script src="funciones/firebase-config.js"></script>
+<script src="funciones/panel.js"></script>
+
+</body>
+</html>

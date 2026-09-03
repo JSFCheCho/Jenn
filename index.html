@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <script src="funciones/firebase-config.js" defer></script>
     <script src="funciones/orientacion.js" defer></script>
     <script src="funciones/medios.js" defer></script>
     <script src="funciones/blog.js" defer></script>
+    <script src="funciones/blog-fire.js" defer></script>
+    <script src="funciones/medios-fire.js" defer></script>
 </head>
 
 <body>
@@ -553,9 +558,15 @@
         
                 <hr>
         
-                <p class="copyright">
-                    © 2026 Jennifer Pedraza. Todos los derechos reservados.
-                </p>
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        © 2026 Jennifer Pedraza. Todos los derechos reservados.
+                    </p>
+        
+                    <a href="login.html" class="footer-admin-link">
+                        <i class="bi bi-box-arrow-in-right me-1"></i>Iniciar sesión
+                    </a>
+                </div>
         
             </div>
         

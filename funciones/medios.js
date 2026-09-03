@@ -1,13 +1,4 @@
-/* ============================================================
-   Galería "En los Medios"
-   ============================================================
 
-   CÓMO AGREGAR LAS PRÓXIMAS 4 IMÁGENES:
-   1. Copia las imágenes a imagenes/medios/
-   2. Descomenta y completa el "Bloque 2" del array de abajo
-   3. Reemplaza cada href="#" por el link real de la nota
-   Nada más hace falta tocar — ni el HTML ni el CSS.
-   ============================================================ */
 
 (function () {
  
@@ -18,14 +9,6 @@
         { img: "imagenes/medios/en%20los%20medios%202.png", href: "https://www.instagram.com/reel/DcNF6kPtbEX/?igsi=MzRlODBiNWFlZA==", alt: "Nota de prensa 2" }, // TODO: reemplazar href
         { img: "imagenes/medios/en%20los%20medios%203.png", href: "https://www.instagram.com/reel/DbEH0tjxNi1/?igsi=MzRlODBiNWFlZA==", alt: "Nota de prensa 3" }, // TODO: reemplazar href
         { img: "imagenes/medios/en%20los%20medios%204.png", href: "https://www.instagram.com/reel/DcRvkbGh_Bj/?igsi=MzRlODBiNWFlZA==", alt: "Nota de prensa 4" }, // TODO: reemplazar href
- 
-        // ---------- Bloque 2: próximas 4, aparecen al hacer clic en "Cargar más" ----------
-        // Descomenta y completa cuando tengas las imágenes 5-8 listas:
-        // { img: "imagenes/medios/en%20los%20medios%204.png", href: "#", alt: "Nota de prensa 5" }, // TODO: reemplazar href
-        // { img: "imagenes/medios/medio-6.jpg", href: "#", alt: "Nota de prensa 6" }, // TODO: reemplazar href
-        // { img: "imagenes/medios/medio-7.jpg", href: "#", alt: "Nota de prensa 7" }, // TODO: reemplazar href
-        // { img: "imagenes/medios/medio-8.jpg", href: "#", alt: "Nota de prensa 8" }, // TODO: reemplazar href
- 
     ];
  
     const ITEMS_POR_TANDA = 4;
