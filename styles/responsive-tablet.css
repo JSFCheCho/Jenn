@@ -671,3 +671,34 @@
     }
  
 }
+
+@media (min-width: 769px) and (max-width: 1199px) {
+ 
+    .footer-pg{
+        padding: 50px 0 22px;
+    }
+ 
+    .footer-pg h5{
+        font-size: 1.4rem;
+    }
+ 
+    .footer-pg h6{
+        font-size: 1rem;
+        margin-bottom: 14px;
+    }
+ 
+    .footer-pg ul{
+        margin-bottom: 10px;
+    }
+ 
+    .redes-sociales a{
+        width: 44px;
+        height: 44px;
+        font-size: 1.15rem;
+    }
+ 
+    .copyright{
+        font-size: .9rem;
+    }
+ 
+}
