@@ -1,7 +1,3 @@
-/* ============================================================
-   Carrusel "Causas" — lee en vivo desde Firestore (colección "causas")
-   Máximo 8 imágenes, subidas desde panel.html
-   ============================================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
 

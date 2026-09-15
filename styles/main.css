@@ -728,6 +728,47 @@ html, body {
  
     margin-top: 16px;
 }
+
+.causas-carrusel .carousel-item a {
+    position: relative;   /* necesario para que el overlay se posicione encima */
+}
+ 
+.causas-carrusel .carousel-item img {
+    transition: filter 0.25s ease;
+}
+ 
+.causas-carrusel .carousel-item a:hover img {
+    filter: grayscale(100%);
+}
+ 
+.causas-carrusel .carousel-item a::after {
+    content: "Clic aquí para ver";
+ 
+    position: absolute;
+    inset: 0;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+ 
+    background-color: rgba(58, 10, 127, 0.55);
+ 
+    color: #ffffff;
+    font-family: "Agrandir", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+ 
+    opacity: 0;
+    transition: opacity 0.25s ease;
+ 
+    pointer-events: none;
+}
+ 
+.causas-carrusel .carousel-item a:hover::after {
+    opacity: 1;
+}
  
 
 

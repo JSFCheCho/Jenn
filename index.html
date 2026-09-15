@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="funciones/firebase-config.js" defer></script>
     <script src="funciones/orientacion.js" defer></script>
     <script src="funciones/medios.js" defer></script>
@@ -243,84 +244,91 @@
             </div>
         </section>
 
-    <section id="causas" class="causas-section">
-        <div class="container causas-container">
-    
-            <img
-                src="imagenes/Pajaros.png"
-                alt=""
-                class="causas-pajaros"
-                aria-hidden="true"
-            >
-    
-            <div class="causas-texto">
-    
-                <div class="causas-titulo-wrap">
-    
-                    <h2 class="causas-titulo">
-                        Nuestras<br>Luchas
-                    </h2>
-    
-                    <svg
-                        class="causas-linea"
-                        viewBox="0 0 180 120"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true">
-    
-                        <path
-                            d="M8 45
-                            C22 25, 43 25, 53 42
-                            C62 58, 58 78, 47 88
-                            C36 98, 30 82, 31 66
-                            C32 48, 48 38, 64 45
-                            C82 53, 82 80, 91 88
-                            C101 98, 108 84, 105 67
-                            C102 51, 112 43, 126 48
-                            C141 53, 143 73, 140 86
-                            C137 99, 126 91, 125 77
-                            C124 62, 135 51, 151 55
-                            C164 58, 168 48, 171 35"
-                            fill="none"
-                            stroke="#f2789a"
-                            stroke-width="4"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-    
-                    </svg>
-    
-                </div>
-    
-                <p class="causas-descripcion">
-                    Aquí podrás profundizar en los temas que nos mueven.
-                    Encontrarás cartillas sobre nuestros proyectos de ley,
-                    material de apoyo y recursos de consulta.
-                </p>
-    
-                <a
-                    href="https://drive.google.com/drive/folders/1RVuR3ACjmdT-tHmEHspO7dlrhnAjmwwO?usp=drive_link"
-                    class="btn causas-boton"
-                    target="_blank"
-                    rel="noopener noreferrer"
+        <section id="causas" class="causas-section">
+            <div class="container causas-container">
+
+                <img
+                    src="imagenes/Pajaros.png"
+                    alt=""
+                    class="causas-pajaros"
+                    aria-hidden="true"
                 >
-                    Ver más <span aria-hidden="true">→</span>
-                </a>
-    
-            </div>
-            <div class="causas-carrusel-wrap">
-    
-                <div id="causasCarousel" class="carousel slide causas-carrusel">
-                    <div class="carousel-inner" id="causasCarouselInner">
+
+                <div class="causas-texto">
+
+                    <div class="causas-titulo-wrap">
+
+                        <h2 class="causas-titulo">
+                            Nuestras<br>Luchas
+                        </h2>
+
+                        <svg
+                            class="causas-linea"
+                            viewBox="0 0 180 120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+
+                            <path
+                                d="M8 45
+                                C22 25, 43 25, 53 42
+                                C62 58, 58 78, 47 88
+                                C36 98, 30 82, 31 66
+                                C32 48, 48 38, 64 45
+                                C82 53, 82 80, 91 88
+                                C101 98, 108 84, 105 67
+                                C102 51, 112 43, 126 48
+                                C141 53, 143 73, 140 86
+                                C137 99, 126 91, 125 77
+                                C124 62, 135 51, 151 55
+                                C164 58, 168 48, 171 35"
+                                fill="none"
+                                stroke="#f2789a"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                        </svg>
+
                     </div>
+
+                    <p class="causas-descripcion">
+                        Aquí podrás profundizar en los temas que nos mueven.
+                        Encontrarás cartillas sobre nuestros proyectos de ley,
+                        material de apoyo y recursos de consulta.
+                    </p>
+
+                    <a
+                        href="https://drive.google.com/drive/folders/1RVuR3ACjmdT-tHmEHspO7dlrhnAjmwwO?usp=drive_link"
+                        class="btn causas-boton"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Ver más <span aria-hidden="true">→</span>
+                    </a>
+
                 </div>
-    
-                <p class="causas-recurso-texto">
-                    Desliza o haz clic en la imagen para ver más
-                </p>
-    
+
+                <!--
+                    Carrusel de "Causas" (antes era una sola caja con un PDF fijo).
+                    Se llena por JavaScript desde funciones/causas-firestore.js
+                    -> NO edites esto a mano, todo se sube desde panel.html.
+                -->
+                <div class="causas-carrusel-wrap">
+
+                    <div id="causasCarousel" class="carousel slide causas-carrusel">
+                        <div class="carousel-inner" id="causasCarouselInner">
+                            <!-- Los <div class="carousel-item"> se generan por JS -->
+                        </div>
+                    </div>
+
+                    <p class="causas-recurso-texto">
+                        Desliza o haz clic en la imagen para ver más
+                    </p>
+
+                </div>
+
             </div>
-    
-        </div>
-    </section>
+        </section>
 
         <section id="plg" class="plg-section">
             <div class="container plg-container">
