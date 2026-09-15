@@ -112,8 +112,6 @@ html, body {
     min-height: 100vh;
 
     overflow: hidden;
-    
-    background-color: #2e0756;
     background-image: url("/imagenes/Fondo-14.png");
     background-size: cover;
     background-position: center;
