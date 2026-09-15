@@ -407,6 +407,8 @@
         text-align: center;
 
         margin: 0;
+
+        transform: translateY(20px);
     }
 
 
@@ -439,6 +441,68 @@
         background-color: #ffffff;
 
         border: 2px solid #000000;
+    }
+
+    .causas-carrusel-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    }
+
+    .causas-carrusel {
+        width: 88vw;
+        max-width: 520px;
+        height: auto;
+        aspect-ratio: 520 / 440;
+    }
+
+    .causas-carrusel-vacio {
+        width: 88vw;
+        max-width: 520px;
+        height: auto;
+        aspect-ratio: 520 / 440;
+
+        padding: 20px;
+    }
+
+    .causas-carrusel .carousel-inner,
+    .causas-carrusel .carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .causas-carrusel .carousel-control-prev,
+    .causas-carrusel .carousel-control-next {
+        width: 36px;
+        height: 36px;
+    }
+
+    .causas-carrusel .carousel-control-prev {
+        left: 8px;
+    }
+
+    .causas-carrusel .carousel-control-next {
+        right: 8px;
+    }
+
+    .causas-carrusel .carousel-indicators {
+        margin-bottom: 7px;
+    }
+
+    .causas-carrusel .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+    }
+
+    .causas-carrusel .carousel-item a::after {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .causas-recurso-texto {
+        font-size: 14px;
+        margin-top: 10px;
     }
 
     .causas-recurso-texto {

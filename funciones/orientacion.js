@@ -2,8 +2,8 @@
 
     const LIMITE_CELULAR = 926;
     const ALTURA_MINIMA = 601;
-    const ANCHO_MINIMO = 460;
-    const ANCHO_MAXIMO = 767;
+    const ANCHO_MINIMO = 430;
+    const ANCHO_MAXIMO = 950 ;
 
 
     function crearOverlay() {

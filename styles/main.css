@@ -136,7 +136,7 @@ html, body {
     width: 430px;
     height: auto;
 
-    left: 7%;
+    left: 17%;
     top: 26%;
 
     z-index: 3;
@@ -145,7 +145,7 @@ html, body {
 .hero-photo {
     position: absolute;
 
-    width: 460px;
+    width: 475px;
     height: auto;
 
     right: 6%;
@@ -160,7 +160,7 @@ html, body {
     width: 400px;
     height: auto;
 
-    left: 0%;
+    left: 7%;
     top: 57%;
 
     z-index: 4;
@@ -169,7 +169,7 @@ html, body {
 .hero-podcast {
     position: absolute;
 
-    width: 430px;
+    width: 365px;
     height: 80px;
 
     left: 40%;
