@@ -47,6 +47,7 @@
                     <select id="seccion" class="form-select" required>
                         <option value="medios">Medios</option>
                         <option value="blog">Blog</option>
+                        <option value="causas">Causas</option>
                     </select>
                 </div>
 
@@ -82,8 +83,15 @@
                 <div class="btn-group" role="group">
                     <button type="button" class="btn panel-tab activo" data-seccion="medios">Medios</button>
                     <button type="button" class="btn panel-tab" data-seccion="blog">Blog</button>
+                    <button type="button" class="btn panel-tab" data-seccion="causas">Causas</button>
                 </div>
             </div>
+
+            <!-- Recordatorio de límite, solo aplica a "Causas" (el carrusel solo muestra hasta 8) -->
+            <p class="text-secondary small mb-2" id="avisoLimiteCausas" style="display:none;">
+                <i class="bi bi-info-circle me-1"></i>
+                El carrusel del sitio solo muestra las 8 más recientes. Si subes una novena, la más vieja deja de verse ahí (pero sigue guardada aquí).
+            </p>
 
             <div id="listaEntradas" class="panel-lista">
                 <p class="text-secondary">Cargando...</p>

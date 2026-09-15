@@ -174,31 +174,15 @@
         height: auto;
 
         left: 6%;
-        top: 22%;
+        top: 40%;
 
         z-index: 3;
-    }
-
-    .hero-circle {
-        position: absolute;
-
-        width: 420px;
-        height: 420px;
-
-        border-radius: 50%;
-
-        background-color: #fc310d;
-
-        right: 6%;
-        bottom: 6%;
-
-        z-index: 1;
     }
 
     .hero-photo {
         position: absolute;
 
-        width: 340px;
+        width: 400px;
         height: auto;
 
         right: 5%;
@@ -210,11 +194,11 @@
     .hero-logo-primero {
         position: absolute;
 
-        width: 140px;
+        width: 300px;
         height: auto;
 
-        left: 8%;
-        top: 60%;
+        left: 0%;
+        top: 65%;
 
         z-index: 4;
     }

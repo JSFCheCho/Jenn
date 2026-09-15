@@ -70,7 +70,7 @@
         height: auto;
 
         left: 50%;
-        top: 14%;
+        top: 20%;
 
         transform: translateX(-50%);
 
@@ -78,43 +78,16 @@
     }
 
 
-
-
-    .hero-circle {
-        position: absolute;
-
-        width: 90vw;
-        height: 90vw;
-
-        min-width: 400px;
-        min-height: 400px;
-
-        max-width: 550px;
-        max-height: 550px;
-
-        left: 50%;
-        bottom: 90px;
-
-        transform: translateX(-50%);
-
-        background-color: #fc310d;
-
-        z-index: 1;
-    }
-
-
-
-
     .hero-photo {
         position: absolute;
 
-        width: 92%;
+        width: 115%;
 
         max-width: 560px;
 
         height: auto;
 
-        left: 50%;
+        left: 52%;
         right: auto;
         bottom: 0;
 
@@ -126,18 +99,7 @@
 
 
     .hero-logo-primero {
-        position: absolute;
-
-        width: 145px;
-
-        height: auto;
-
-        left: 50%;
-        top: 78%;
-
-        transform: translateX(-50%);
-
-        z-index: 5;
+        display: none !important;
     }
 
     .hero-podcast {
