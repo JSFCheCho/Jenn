@@ -63,14 +63,14 @@
     .hero-logo-jennifer {
         position: absolute;
 
-        width: 72%;
+        width: 70%;
 
         max-width: 430px;
 
         height: auto;
 
         left: 50%;
-        top: 20%;
+        top: 13%;
 
         transform: translateX(-50%);
 
@@ -315,6 +315,8 @@
         max-width: none;
         height: auto;
         display: block;
+        position: relative;
+        top: -30px;
     }
 
     /* TEXTO */
@@ -443,12 +445,14 @@
         border: 2px solid #000000;
     }
 
-    .causas-carrusel-wrap {
+.causas-carrusel-wrap {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: -45px;
-    }
+}
 
     .causas-carrusel {
         width: 88vw;
